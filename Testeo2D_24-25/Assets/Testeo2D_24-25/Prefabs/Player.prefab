@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3597000909502004936}
   - component: {fileID: 1764783550328469441}
   - component: {fileID: 517868189997089203}
+  - component: {fileID: 2151038699700757302}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -117,7 +118,7 @@ CapsuleCollider2D:
   m_GameObject: {fileID: 3857631934978982169}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: da3e5fa13ff80c544a6ef0a0d9a2f0f3, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -169,4 +170,20 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
+--- !u!114 &2151038699700757302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3857631934978982169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96d8ed8ebb76bc143954ab0e38e4597d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerRb: {fileID: 0}
+  speed: 8
+  jumpForce: 8
+  isGrounded: 1
